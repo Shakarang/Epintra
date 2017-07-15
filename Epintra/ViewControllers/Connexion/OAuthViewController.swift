@@ -29,7 +29,7 @@ class OAuthViewController: UIViewController, WKUIDelegate, WKNavigationDelegate 
     var userEmail: String?
 
     /// Regular expression to extract the token value from the cookies
-    let tokenRegexp = "(?<=PHPSESSID=)[^;]*"
+    let tokenRegexp = "(?<=user=)[^;]*"
 
     /// Delegate to call when the authentication is finished
     weak var oAuthDelegate: OAuthDelegate?
